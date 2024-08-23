@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança & Salário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Site Segurança & Salário</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#norma15">Norma Trabalhista 15</a></li>
+            <li><a href="#calculadoras">Calculadoras</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Início</h2>
+        <p>Aqui, você encontrará informações essenciais sobre as condições de trabalho que podem afetar sua saúde e bem-estar. Nosso objetivo é proporcionar a você uma compreensão clara das normas de insalubridade, níveis de ruído e outros fatores que impactam o ambiente de trabalho. Além disso, explicamos como essas condições podem influenciar seu salário, garantindo que você esteja sempre ciente dos seus direitos. Explore nosso site e fique informado sobre como proteger sua saúde no trabalho e garantir uma remuneração justa.</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Nosso site foi criado com o objetivo de informar os trabalhadores sobre as condições de trabalho que podem impactar sua saúde e segurança, como insalubridade e exposição ao barulho. Além de fornecer detalhes sobre os limites de tolerância para essas condições, também explicamos os valores de acréscimo salarial que podem ser garantidos para quem trabalha nessas situações. Queremos ajudar você a entender seus direitos e as normas que protegem a saúde no ambiente de trabalho, assegurando um ambiente mais seguro e justo para todos.</p>
+    </section>
+
+    <section id="norma15">
+        <h2>Norma Trabalhista 15</h2>
+        <button onclick="mostrarTexto()">Ver Norma Trabalhista 15</button>
+        <div id="textoNorma" style="display: none;">
+            <p>15.1 São consideradas atividades ou operações insalubres as que se desenvolvem:</p>
+            <p>15.1.1 Acima dos limites de tolerância previstos nos Anexos n.º 1, 2, 3, 5, 11 e 12;</p>
+            <p>15.1.2 (Revogado pela Portaria MTE n.º 3.751, de 23 de novembro de 1990)</p>
+            <p>15.1.3 Nas atividades mencionadas nos Anexos n.º 6, 13 e 14;</p>
+            <p>15.1.4 Comprovadas através de laudo de inspeção do local de trabalho, constantes dos Anexos n.º 7, 8, 9 e 10.</p>
+            <p>15.1.5 Entende-se por "Limite de Tolerância", para os fins desta Norma, a concentração ou intensidade máxima ou mínima, relacionada com a natureza e o tempo de exposição ao agente, que não causará dano à saúde do trabalhador, durante a sua vida laboral.</p>
+            <p>15.2 O exercício de trabalho em condições de insalubridade, de acordo com os subitens do item anterior, assegura ao trabalhador a percepção de adicional, incidente sobre o salário mínimo da região, equivalente a:</p>
+            <p>15.2.1 40% (quarenta por cento), para insalubridade de grau máximo;</p>
+            <p>15.2.2 20% (vinte por cento), para insalubridade de grau médio;</p>
+            <p>15.2.3 10% (dez por cento), para insalubridade de grau mínimo;</p>
+            <p>15.3 No caso de incidência de mais de um fator de insalubridade, será apenas considerado o de grau mais elevado, para efeito de acréscimo salarial, sendo vedada a percepção cumulativa.</p>
+            <p>15.4 A eliminação ou neutralização da insalubridade determinará a cessação do pagamento do adicional respectivo.</p>
+            <p>15.4.1 A eliminação ou neutralização da insalubridade deverá ocorrer:</p>
+            <p>a) com a adoção de medidas de ordem geral que conservem o ambiente de trabalho dentro dos limites de tolerância;</p>
+            <p>b) com a utilização de equipamento de proteção individual.</p>
+            <p>15.4.1.1 Cabe à autoridade regional competente em matéria de segurança e saúde do trabalhador, comprovada a insalubridade por laudo técnico de engenheiro de segurança do trabalho ou médico do trabalho, devidamente habilitado, fixar adicional devido aos empregados expostos à insalubridade quando impraticável sua eliminação ou neutralização.</p>
+            <p>15.4.1.2 A eliminação ou neutralização da insalubridade ficará caracterizada através de avaliação pericial por órgão competente, que comprove a inexistência de risco à saúde do trabalhador.</p>
+            <p>15.5 É facultado às empresas e aos sindicatos das categorias profissionais interessadas requererem ao Ministério do Trabalho, através das DRTs, a realização de perícia em estabelecimento ou setor deste, com o objetivo de caracterizar e classificar ou determinar atividade insalubre.</p>
+            <p>15.5.1 Nas perícias requeridas às Delegacias Regionais do Trabalho, desde que comprovada a insalubridade, o perito do Ministério do Trabalho indicará o adicional devido.</p>
+            <p>15.6 O perito descreverá no laudo a técnica e a aparelhagem utilizadas.</p>
+            <p>15.7 O disposto no item 15.5. não prejudica a ação fiscalizadora do MTb nem a realização ex officio da perícia, quando solicitado pela Justiça, nas localidades onde não houver perito.</p>
+        </div>
+    </section>
+
+    <section id="calculadoras">
+        <h2>Calculadoras</h2>
+
+        <div class="calculadora">
+            <h3>Calculadora de Acréscimo Salarial por Insalubridade</h3>
+            <label for="salarioBase">Salário Base (R$):</label>
+            <input type="number" id="salarioBase" placeholder="Ex: 2000">
+
+            <label for="grauInsalubridade">Grau de Insalubridade:</label>
+            <select id="grauInsalubridade">
+                <option value="40">40% - Grau Máximo</option>
+                <option value="20">20% - Grau Médio</option>
+                <option value="10">10% - Grau Mínimo</option>
+            </select>
+
+            <button onclick="calcularInsalubridade()">Calcular Acréscimo</button>
+            <p id="resultadoInsalubridade"></p>
+        </div>
+
+        <div class="calculadora">
+            <h3>Calculadora de Exposição ao Ruído</h3>
+            <label for="tempoExposicao">Tempo de Exposição:</label>
+            <select id="tempoExposicao">
+                <option value="8">8 horas - 85 dB</option>
+                <option value="7">7 horas - 86 dB</option>
+                <option value="6">6 horas - 87 dB</option>
+                <option value="5.5">5 horas e 30 minutos - 88 dB</option>
+                <option value="5">5 horas - 89 dB</option>
+                <option value="4.5">4 horas e 30 minutos - 90 dB</option>
+                <option value="4">4 horas - 91 dB</option>
+                <option value="3.5">3 horas e 30 minutos - 92 dB</option>
+                <option value="3">3 horas - 93 dB</option>
+                <option value="2.5">2 horas e 30 minutos - 94 dB</option>
+                <option value="2.25">2 horas e 15 minutos - 95 dB</option>
+                <option value="2">2 horas - 96 dB</option>
+                <option value="1.75">1 hora e 45 minutos - 98 dB</option>
+                <option value="1.25">1 hora e 15 minutos - 100 dB</option>
+                <option value="1">1 hora - 102 dB</option>
+                <option value="0.75">45 minutos - 104 dB</option>
+                <option value="0.583">35 minutos - 105 dB</option>
+                <option value="0.5">30 minutos - 106 dB</option>
+                <option value="0.417">25 minutos - 108 dB</option>
+                <option value="0.333">20 minutos - 110 dB</option>
+                <option value="0.25">15 minutos - 112 dB</option>
+                <option value="0.167">10 minutos - 114 dB</option>
+                <option value="0.133">8 minutos - 115 dB</option>
+                <option value="0.117">7 minutos - 115 dB</option>
+            </select>
+
+            <label for="decibeis">Decibéis (dB):</label>
+            <input type="number" id="decibeis" placeholder="Ex: 90">
+
+            <button onclick="calcularRuido()">Verificar Exposição</button>
+            <p id="resultadoRuido"></p>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
